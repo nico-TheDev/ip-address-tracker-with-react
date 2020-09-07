@@ -1,20 +1,27 @@
 {
-  "name": "ip-address-tracker-master",
-  "version": "1.0.0",
-  "description": "![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "dependencies": {
-    "axios": "^0.20.0",
-    "parcel-bundler": "^1.12.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start":"parcel public/index.html",
-    "build":"parcel build public/index.html"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "ip-address-tracker-master",
+    "version": "1.0.0",
+    "description": "![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)",
+    "main": "index.js",
+    "dependencies": {
+        "autoprefixer": "^9.8.6",
+        "axios": "^0.20.0",
+        "leaflet": "^1.7.1",
+        "parcel-bundler": "^1.12.4",
+        "postcss-cli": "^7.1.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-leaflet": "^2.7.0",
+        "tailwindcss": "^1.8.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "parcel public/index.html",
+        "build": "parcel build public/index.html",
+        "build-css": "postcss src/css/tailwind.css -o src/css/main.css",
+        "watch-css": "postcss src/css/tailwind.css -o src/css/main.css --w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
