@@ -97,8 +97,10 @@ export default function Search() {
                     className="flex-1 px-6 text-sm rounded-tl-lg rounded-bl-lg"
                     onChange={(e) => setInput(e.target.value)}
                     value={input}
+                    name='search'
+                    title='search field'
                 />
-                <button className="color-red bg-black p-4 rounded-br-lg rounded-tr-lg hover:bg-gray-800">
+                <button name='submit' className="color-red bg-black p-4 rounded-br-lg rounded-tr-lg hover:bg-gray-800">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="11"
