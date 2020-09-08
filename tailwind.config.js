@@ -1,10 +1,12 @@
-
 module.exports = {
     future: {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
-    purge: [],
+    purge: {
+        enabled: process.env.NODE_ENV === "production",
+        content: ["./public/**/*.html", "./src/**/*.js"],
+    },
     theme: {
         fontFamily: {
             default: ["Rubik", "sans-serif"],
@@ -29,13 +31,13 @@ module.exports = {
             backgroundImage: (theme) => ({
                 pattern: "url(../images/pattern-bg.png)",
             }),
-            minHeight:{
-                ten:'10rem'
-            }
+            minHeight: {
+                ten: "10rem",
+            },
         },
     },
     variants: {
-        borderWidth:['responsive','first']
+        borderWidth: ["responsive", "first"],
     },
     plugins: [],
 };
