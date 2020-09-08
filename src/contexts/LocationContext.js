@@ -9,7 +9,6 @@ const LocationProvider = ({ children }) => {
     useEffect(() => {
         GEO.get('v1')
             .then((res) => {
-                console.log(res.data);
                 setLocation(res.data);
             })
             .catch((err) => console.log(err));
